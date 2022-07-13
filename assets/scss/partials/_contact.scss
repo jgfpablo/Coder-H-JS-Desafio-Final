@@ -1,0 +1,47 @@
+section {
+
+    article {
+        div {
+            iframe {
+                min-height: 350px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .color {
+                padding-top: 10px;
+                color: map-get($var, color)
+            }
+        }
+
+    }
+
+    div {
+        .f {
+            font-size: 7rem;
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: map-get($var, color-hover);
+            }
+        }
+
+        div {
+            .contact-text-card {
+                display: flex;
+                justify-content: center;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+.color {
+    padding-top: 10px;
+    color: map-get($var, color);
+
+    &:hover {
+        color: map-get($var, color-hover);
+    }
+}

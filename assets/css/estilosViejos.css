@@ -1,0 +1,413 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap'); */
+
+* {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body {
+    background-color: black;
+}
+
+/* .header .nav ul li a:hover {
+    color: #af8b5f;
+}
+
+.active {
+    color: #d3ad7f !important;
+}
+
+.header nav ul {
+    animation-duration: 2s;
+    animation-name: slide;
+} */
+
+/* .hero div {
+    position: absolute;
+    top: 14%;
+    left: 10%;
+}
+
+.title-hero {
+    font-size: 3.5rem
+}
+
+.text-hero {
+    font-size: 1.5rem;
+} */
+
+
+/* @keyframes slide {
+    0% {
+        margin-left: 150%;
+    }
+
+    50% {
+        margin-left: 0%;
+    }
+
+    65% {
+        margin-left: 1%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+} */
+
+/* ------------------------------------------------MAIN/Index--------------------------------------------------------- */
+
+/* 
+.hero {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.hero div {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.hero div h1 {
+    color: #d3ad7f;
+}
+
+.hero div span p {
+    color: white;
+} */
+
+/* .card-index {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 400px;
+    grid-template-areas: "cardImg-index cardContent-index";
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+
+
+/* 
+.card-index .cardImg-index {
+    grid-area: cardImg-index;
+}
+
+.card-index .cardImg-index img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-index .cardContent-index {
+    grid-area: cardContent-index;
+    background-color: #13131a;
+}
+
+.card-index .cardContent-index h1 {
+    color: #d3ad7f;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.card-index .cardContent-index span {
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.index-text-card {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+ */
+
+/* ------------------------------------------------FIN MAIN/Index--------------------------------------------------------- */
+
+
+/* ------------------------------------------------MAIN/Nosotros--------------------------------------------------------- */
+
+/* .historia {
+    display: flex;
+    justify-content: center;
+}
+
+.nosotros {
+    align-items: center;
+}
+
+.nosotros-text {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+.main-nosotros section article {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ */
+
+
+/* ------------------------------------------------FIN MAIN/Nosotros--------------------------------------------------------- */
+
+
+/* ------------------------------------------------MAIN/Contacto--------------------------------------------------------- */
+
+
+.card-contact {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 400px;
+    grid-template-areas: "cardImg-contact cardContent-contact";
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-contact .cardImg-contact {
+    grid-area: cardImg-contact;
+    width: 100%;
+}
+
+
+.card-contact .cardContent-contact {
+    width: 100%;
+    grid-area: cardContent-contact;
+    background-color: #13131a;
+}
+
+.contact-title-card {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: #d3ad7f;
+}
+
+.contact-text-card {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+/* ------------------------------------------------FIN MAIN/Contacto--------------------------------------------------------- */
+
+/* ------------------------------------------------ MAIN/Products--------------------------------------------------------- */
+
+/* .products {
+    border: 1px solid white;
+    margin: 20px;
+} */
+
+/* ------------------------------------------------FIN MAIN/Products--------------------------------------------------------- */
+
+/* ------------------------------------------------FOOTER--------------------------------------------------------- */
+/* 
+.footer {
+    margin-top: 10px;
+}
+
+.footer .redes ul li a i {
+    font-size: 48px;
+    padding: 16px;
+    color: white;
+}
+
+.footer .redes ul li a i:hover {
+    color: #d3ad7f;
+}
+
+
+
+.footer .menu ul li {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer .menu ul li a {
+    color: white;
+}
+
+.footer .menu ul li:hover {
+    transition-duration: 1s;
+    background-color: #d3ad7f;
+}
+
+.footer .creditos {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer .creditos p {
+    display: inline;
+    color: #d3ad7f;
+}
+
+ */
+
+
+
+
+
+
+
+
+/* 
+.hero div {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+
+.title-hero {
+    font-size: 2rem
+}
+
+.text-hero {
+    font-size: 1rem;
+}
+
+
+
+
+@media (min-width: 576px) {
+
+    .hero div {
+        position: absolute;
+        top: 14%;
+        left: 10%;
+    }
+
+    .title-hero {
+        font-size: 3.5rem
+    }
+
+    .text-hero {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .hero div {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+    }
+
+    .title-hero {
+        font-size: 3.5rem
+    }
+
+    .text-hero {
+        font-size: 2.3rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .hero div {
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }
+
+    .title-hero {
+        font-size: 3.5rem
+    }
+
+    .text-hero {
+        font-size: 2.3rem;
+    }
+} */
+
+.min-height-350 {
+    min-height: 350px;
+}
+
+.bg {
+    background-color: #13131a;
+}
+
+.color {
+    color: #d3ad7f;
+}
+
+.products-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.tachar {
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.hover:hover {
+    color: #d3ad7f;
+}
+
+.text {
+    color: black;
+}
+
+.f {
+    font-size: 7rem;
+}
+
+.icon-size-form {
+    font-size: 2rem;
+    width: 2rem;
+    margin: 10px;
+}
+
+.text-width-form {
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.border-100 {
+    border-radius: 100%;
+}

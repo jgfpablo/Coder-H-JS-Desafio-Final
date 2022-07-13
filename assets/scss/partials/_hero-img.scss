@@ -1,0 +1,74 @@
+@import "../variables/variables.scss";
+
+
+main {
+    .hero {
+        position: relative;
+
+        div {
+
+            .title-hero {
+                font-size: 2rem;
+                color: map-get($var, color);
+            }
+
+            .text-hero {
+                font-size: 1rem;
+                color: white;
+            }
+
+            position: absolute;
+            top: 15%;
+            left: 8%;
+
+            @media (min-width: 576px) {
+                position: absolute;
+                top: 14%;
+                left: 10%;
+
+                .title-hero {
+                    font-size: 3.5rem
+                }
+
+                .text-hero {
+                    font-size: 1.5rem;
+                }
+            }
+
+            @media (min-width: 768px) {
+
+
+                position: absolute;
+                top: 15%;
+                left: 5%;
+
+                .title-hero {
+                    font-size: 3.5rem
+                }
+
+                .text-hero {
+                    font-size: 2.3rem;
+                }
+            }
+
+
+            @media (min-width: 992px) {
+
+
+                position: absolute;
+                top: 30%;
+                left: 15%;
+
+                .title-hero {
+                    font-size: 3.5rem
+                }
+
+                .text-hero {
+                    font-size: 2.3rem;
+                }
+
+            }
+
+        }
+    }
+}

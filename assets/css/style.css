@@ -1,0 +1,270 @@
+body {
+  background-color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white; }
+
+.bg {
+  background-color: #13131a; }
+
+header nav div .logo {
+  color: #d3ad7f !important;
+  font-size: 1.8rem; }
+  header nav div .logo:hover {
+    color: #af8b5f !important; }
+
+header nav ul {
+  animation-duration: 2s;
+  animation-name: slide; }
+  header nav ul li .active {
+    color: #d3ad7f !important; }
+  header nav ul li a:hover {
+    color: #af8b5f; }
+
+@keyframes slide {
+  0% {
+    margin-left: 150%; }
+  50% {
+    margin-left: 0%; }
+  65% {
+    margin-left: 1%; }
+  100% {
+    margin-left: 0%; } }
+
+main .hero {
+  position: relative; }
+  main .hero div {
+    position: absolute;
+    top: 15%;
+    left: 8%; }
+    main .hero div .title-hero {
+      font-size: 2rem;
+      color: #d3ad7f; }
+    main .hero div .text-hero {
+      font-size: 1rem;
+      color: white; }
+    @media (min-width: 576px) {
+      main .hero div {
+        position: absolute;
+        top: 14%;
+        left: 10%; }
+        main .hero div .title-hero {
+          font-size: 3.5rem; }
+        main .hero div .text-hero {
+          font-size: 1.5rem; } }
+    @media (min-width: 768px) {
+      main .hero div {
+        position: absolute;
+        top: 15%;
+        left: 5%; }
+        main .hero div .title-hero {
+          font-size: 3.5rem; }
+        main .hero div .text-hero {
+          font-size: 2.3rem; } }
+    @media (min-width: 992px) {
+      main .hero div {
+        position: absolute;
+        top: 30%;
+        left: 15%; }
+        main .hero div .title-hero {
+          font-size: 3.5rem; }
+        main .hero div .text-hero {
+          font-size: 2.3rem; } }
+
+.footer {
+  margin-top: 10px; }
+  .footer .menu ul li {
+    width: 105px;
+    height: 46px;
+    margin: 5px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center; }
+    .footer .menu ul li:hover {
+      background-color: #d3ad7f; }
+    .footer .menu ul li a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+      color: white; }
+      .footer .menu ul li a:hover {
+        color: black !important; }
+  .footer .creditos {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .footer .creditos p {
+      display: inline;
+      color: #d3ad7f; }
+  .footer .redes ul li {
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center; }
+    .footer .redes ul li a i {
+      font-size: 48px;
+      padding: 16px;
+      color: white; }
+      .footer .redes ul li a i:hover {
+        color: #af8b5f !important; }
+
+.index-text-card {
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+
+.bg-img {
+  background-image: url("../img/fondo.jpg");
+  background-size: cover; }
+
+.color-titulo-card-index {
+  color: #d3ad7f;
+  font-size: 2rem;
+  text-align: center; }
+
+.historia {
+  display: flex;
+  justify-content: center; }
+  .historia .nosotros {
+    align-items: center;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .historia .nosotros .nosotros-img {
+      width: 60%;
+      margin-top: 5px; }
+    .historia .nosotros .nosotros-text {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-self: center;
+      align-items: center; }
+
+.w-80 {
+  width: 80%; }
+
+.img-menu {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 400px; }
+
+.tachar {
+  text-decoration: line-through; }
+
+.menu-text, .menu-text-title, .menu-text-precio {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center; }
+
+.menu-text-title {
+  min-height: 120px;
+  max-height: 120px; }
+
+.menu-text-precio {
+  min-height: 60px;
+  max-height: 60px; }
+
+.sub-menu {
+  font-size: 3rem;
+  text-align: center; }
+
+.resenas {
+  border: 1px solid white;
+  margin: 20px; }
+
+.icon-size-form {
+  font-size: 2rem;
+  width: 2rem;
+  margin: 10px; }
+
+.text-width-form {
+  width: 100%;
+  padding-top: 10px;
+  margin-bottom: 10px; }
+
+.border-100 {
+  border-radius: 100%; }
+
+.text-card {
+  min-height: 168px; }
+
+.imagen-resena {
+  min-width: 230px;
+  min-height: 180px;
+  max-width: 230px;
+  max-height: 180px; }
+
+.button {
+  align-items: center;
+  background-color: #d3ad7f;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  padding: 1.4rem;
+  font-weight: 700; }
+  .button:hover {
+    transform: translateY(-1px);
+    background-color: #af8b5f; }
+
+section article div iframe {
+  min-height: 350px;
+  width: 100%;
+  height: 100%; }
+
+section article div .color {
+  padding-top: 10px;
+  color: #d3ad7f; }
+
+section div .f {
+  font-size: 7rem;
+  color: white;
+  text-decoration: none; }
+  section div .f:hover {
+    color: #af8b5f; }
+
+section div div .contact-text-card {
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+
+.color {
+  padding-top: 10px;
+  color: #d3ad7f; }
+  .color:hover {
+    color: #af8b5f; }
+
+.tachar {
+  text-decoration: line-through; }
+
+.products-text, .products-text-title-promociones, .products-text-precio-promociones {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center; }
+
+.products-text-title-promociones {
+  min-height: 120px;
+  max-height: 120px; }
+
+.products-text-precio-promociones {
+  min-height: 60px;
+  max-height: 60px; }
+
+.vencimiento-promocion {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700; }
+
+.precio {
+  margin-left: 65px;
+  margin-right: 10px; }

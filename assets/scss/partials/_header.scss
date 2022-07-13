@@ -1,0 +1,57 @@
+@import "../variables/variables.scss";
+
+header {
+
+    nav {
+        div {
+            .logo {
+                color: map-get($var, color) !important;
+                font-size: 1.8rem;
+
+                &:hover {
+                    color: map-get($var, color-hover) !important;
+                }
+            }
+        }
+
+        ul {
+            animation-duration: 2s;
+            animation-name: slide;
+
+            li {
+                .active {
+                    color: map-get($var, color) !important;
+                }
+
+                a {
+                    &:hover {
+                        color: map-get($var, color-hover);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .logo{
+//     color: map-get($var , color );
+// }
+
+
+@keyframes slide {
+    0% {
+        margin-left: 150%;
+    }
+
+    50% {
+        margin-left: 0%;
+    }
+
+    65% {
+        margin-left: 1%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
