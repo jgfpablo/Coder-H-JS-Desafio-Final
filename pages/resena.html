@@ -90,12 +90,12 @@
                     
                     <div class="col-12 d-flex flex-column p-4 ">
                         <div class="d-flex"> <i class="fas fa-user icon-size-form"></i><input
-                            onkeypress="localStorageFormulario()"   class="text-width-form text" required  placeholder="Nombre" id="nombre" type="text"></div>
+                            onkeydown="localStorageFormulario()"   class="text-width-form text" required  placeholder="Nombre" id="nombre" type="text"></div>
 
                         <div class="d-flex"><i class="fas fa-envelope icon-size-form"></i><input
-                            onkeypress="localStorageFormulario()"   class="text-width-form text" id="correo" required  placeholder="Correo" type="email"></div>
+                            onkeydown="localStorageFormulario()"   class="text-width-form text" id="correo" required  placeholder="Correo" type="email"></div>
 
-                        <textarea class="text" onkeypress="localStorageFormulario()"  id="texto" cols="30" required rows="10" placeholder="Dejanos tu comentario"></textarea>
+                        <textarea class="text" onkeydown="localStorageFormulario()"  id="texto" cols="30" required rows="10" placeholder="Dejanos tu comentario"></textarea>
 
                         <button  class="mt-4 button"  onclick="AgregarNuevoComentario();return false">Enviar</button> 
                         
