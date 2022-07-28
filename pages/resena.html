@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
 </head>
 
 
@@ -27,7 +28,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark fs-3">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="./index.html"><img src="../assets/img/logo-menu.png" width="50px"
+                <a class="navbar-brand logo" href="../index.html"><img src="../assets/img/logo-menu.png" width="50px"
                         alt="Logo" srcset=""> Coffee</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,19 +85,22 @@
 
                     <h1 class="col-12 d-flex justify-content-center color">Reseña</h1>
 
-                    <div class="col-12 d-flex flex-column p-4 ">
 
+<form action="">
+                    
+                    <div class="col-12 d-flex flex-column p-4 ">
                         <div class="d-flex"> <i class="fas fa-user icon-size-form"></i><input
-                                class="text-width-form text" placeholder="Nombre" type="text"></div>
+                                class="text-width-form text" required  placeholder="Nombre" id="nombre" type="text"></div>
 
                         <div class="d-flex"><i class="fas fa-envelope icon-size-form"></i><input
-                                class="text-width-form text" placeholder="Correo" type="text"></div>
+                                class="text-width-form text" id="correo" required  placeholder="Correo" type="email"></div>
 
-                        <textarea class="text" name="" id="" cols="30" rows="10"> Dejanos tu comentario</textarea>
+                        <textarea class="text"  id="texto" cols="30" required rows="10" placeholder="Dejanos tu comentario"></textarea>
 
-                        <button class="mt-4 button">Enviar</button>
-
+                        <button  class="mt-4 button"  onclick="AgregarNuevoComentario();return false">Enviar</button> 
+                        
                     </div>
+</form>
 
                 </div>
 
@@ -104,131 +108,8 @@
         </section>
 
 
-        <section class=" col-12 container-fluid d-flex flex-wrap justify-content-center pt-5">
-
-            <article class=" col-12 col-md-4 col-lg-3 bg m-4 resenas">
-
-                <div class="d-flex justify-content-center pt-4">
-                    <img src="../assets/img/quote-img.png" alt="cita" srcset="">
-                </div>
-
-                <div class="d-flex justify-content-center mt-4 text-card">
-                    <span class=" text-center ">El olor a café de calidad ya te hace entrar, tiene mesas adentro y una
-                        terraza acogedora, ideal si vas de charla con amigos o solo con tu laptop . Muy buena
-                        atención.</span>
-                </div>
-
-                <div class="d-flex justify-content-center mt-4">
-                    <img class="border-100 imagen-resena" src="../assets/img/personas/persona.jpg" width="90%"
-                        alt="image user" srcset="">
-                </div>
-
-                <div class=" d-flex justify-content-center fs-2"><span class="color fs-1">Linus Torvalds</span></div>
-
-            </article>
-
-            <article class=" col-12 col-md-4 col-lg-3 bg m-4 resenas ">
-
-                <div class="d-flex justify-content-center pt-4">
-                    <img src="../assets/img/quote-img.png" alt="cita" srcset="">
-                </div>
-
-                <div class="d-flex justify-content-center mt-4 text-card">
-                    <span class=" text-center ">El lugar es acogedor y el café de lo mejor que puedes encontrar</span>
-                </div>
-
-                <div class="d-flex justify-content-center mt-4">
-                    <img class="border-100 imagen-resena" src="../assets/img/personas/persona-1.jpg" width="90%"
-                        alt="image user" srcset="">
-                </div>
-
-                <div class=" d-flex justify-content-center fs-2"><span class="color fs-1">Jose Luis</span></div>
-
-            </article>
-
-
-            <article class=" col-12 col-md-4 col-lg-3 bg m-4 resenas ">
-
-                <div class="d-flex justify-content-center pt-4">
-                    <img src="../assets/img/quote-img.png" alt="cita" srcset="">
-                </div>
-
-                <div class="d-flex justify-content-center mt-4 text-card">
-                    <span class=" text-center ">este es un verdadero lugar para tomar un gran cafe</span>
-                </div>
-
-                <div class="d-flex justify-content-center mt-4">
-                    <img class="border-100 imagen-resena" src="../assets/img/personas/persona-2.jpg" width="90%"
-                        alt="image user" srcset="">
-                </div>
-
-                <div class=" d-flex justify-content-center fs-2"><span class="color fs-1">Maria Gomez</span></div>
-
-            </article>
-
-
-            <article class=" col-12 col-md-4 col-lg-3 bg m-4 resenas">
-
-                <div class="d-flex justify-content-center pt-4">
-                    <img src="../assets/img/quote-img.png" alt="cita" srcset="">
-                </div>
-
-                <div class="d-flex justify-content-center mt-4 text-card">
-                    <span class=" text-center ">Excelente la comida, porciones grandes y muy buenas</span>
-                </div>
-
-                <div class="d-flex justify-content-center mt-4">
-                    <img class="border-100 imagen-resena" src="../assets/img/personas/persona-3.jpeg" width="90%"
-                        alt="image user" srcset="">
-                </div>
-
-                <div class=" d-flex justify-content-center fs-2"><span class="color fs-1">Mario Gonzalez</span></div>
-
-            </article>
-
-
-            <article class=" col-12 col-md-4 col-lg-3 bg m-4 resenas">
-
-                <div class="d-flex justify-content-center pt-4">
-                    <img src="../assets/img/quote-img.png" alt="cita" srcset="">
-                </div>
-
-                <div class="d-flex justify-content-center mt-4 text-card">
-                    <span class=" text-center ">Fui a tomar un cafe y comer algunas cositas. El lugar está bueno, pero
-                        demoran demasiado.</span>
-                </div>
-
-                <div class="d-flex justify-content-center mt-4">
-                    <img class="border-100 imagen-resena" src="../assets/img/personas/persona-4.jpg" width="90%"
-                        alt="image user" srcset="">
-                </div>
-
-                <div class=" d-flex justify-content-center fs-2"><span class="color fs-1">Carlos Rivera</span></div>
-
-            </article>
-
-
-            <article class=" col-12 col-md-4 col-lg-3 bg m-4 resenas">
-
-                <div class="d-flex justify-content-center pt-4">
-                    <img src="../assets/img/quote-img.png" alt="cita" srcset="">
-                </div>
-
-                <div class="d-flex justify-content-center mt-4 text-card">
-                    <span class=" text-center ">Excelente ambiente, atención y bebidas. Un lugar mágico para
-                        apreciadores de café. Además de apreciar distintos tipos de café, se puede conocer más acerca de
-                        las variaciones. Recomendo.</span>
-                </div>
-
-                <div class="d-flex justify-content-center mt-4">
-                    <img class="border-100 imagen-resena" src="../assets/img/personas/persona-5.jpg" width="90%"
-                        alt="image user" srcset="">
-                </div>
-
-                <div class=" d-flex justify-content-center fs-2"><span class="color fs-1">Fernando Ruiz</span></div>
-
-            </article>
-
+        <section id="comentarios" class=" col-12 container-fluid d-flex flex-wrap justify-content-center pt-5">
+            
         </section>
 
     </main>
@@ -265,7 +146,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="../assets/js/resena.js"></script>
 </body>
 
 </html>

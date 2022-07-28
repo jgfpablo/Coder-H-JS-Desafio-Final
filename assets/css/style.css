@@ -187,6 +187,63 @@ main .hero {
     background-color: #af8b5f;
     color: white; }
 
+.input-number {
+  width: 30%;
+  text-align: center;
+  background-color: #af8b5f;
+  color: black;
+  font-weight: bold;
+  padding-left: 19px; }
+
+.btn-agregar-quitar {
+  font-weight: bold;
+  background-color: #d3ad7f;
+  font-size: 1.5rem;
+  width: 15%; }
+  .btn-agregar-quitar:hover {
+    background-color: #af8b5f;
+    color: white; }
+
+.agregar-quitar-menu {
+  display: flex;
+  justify-content: space-around; }
+
+.fondo-modal {
+  background-color: #13131a; }
+
+.color-modal {
+  background-color: #d3ad7f; }
+
+.text-color-modal-1 {
+  color: #d3ad7f; }
+
+.text-color-modal-2 {
+  color: #af8b5f; }
+
+.btn-ok {
+  background-color: #d3ad7f;
+  color: black; }
+  .btn-ok:hover {
+    background-color: #af8b5f;
+    color: white; }
+
+.btn-cerrar {
+  background-color: #4b4b4b;
+  color: white; }
+  .btn-cerrar:hover {
+    background-color: #282828;
+    color: #d3ad7f; }
+
+.swal2-success-ring {
+  border-color: #d3ad7f !important;
+  color: #d3ad7f !important; }
+
+.swal2-confirm {
+  background-color: #d3ad7f !important; }
+
+.swal2-styled.swal2-confirm:hover {
+  color: #282828; }
+
 .resenas {
   border: 1px solid white;
   margin: 20px; }
@@ -217,7 +274,7 @@ main .hero {
   align-items: center;
   background-color: #d3ad7f;
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   color: black;
   cursor: pointer;
@@ -228,6 +285,14 @@ main .hero {
   .button:hover {
     transform: translateY(-1px);
     background-color: #af8b5f; }
+
+.span-text {
+  max-width: 235px;
+  width: 235px; }
+
+.leerMas {
+  color: #d3ad7f !important;
+  font-size: 2rem; }
 
 section article div iframe {
   min-height: 350px;

@@ -47,3 +47,76 @@
         color: white;
     }
 }
+
+.input-number {
+    width: 30%;
+    text-align: center;
+    background-color: map-get($var, color-hover);
+    color: black;
+    font-weight: bold;
+    padding-left: 19px;
+}
+
+.btn-agregar-quitar {
+    font-weight: bold;
+    background-color: map-get($var, color);
+    font-size: 1.5rem;
+    width: 15%;
+    &:hover {
+        background-color: map-get($var, color-hover);
+        color: white;
+    }
+}
+
+.agregar-quitar-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fondo-modal {
+    background-color: map-get($var, bg2);
+}
+
+.color-modal {
+    background-color: map-get($var, color);
+}
+
+.text-color-modal-1 {
+    color: map-get($var, color);
+}
+
+.text-color-modal-2 {
+    color: map-get($var, color-hover);
+}
+
+.btn-ok {
+    background-color: map-get($var, color);
+    color: black;
+    &:hover {
+        background-color: map-get($var, color-hover);
+        color: white;
+    }
+}
+
+.btn-cerrar {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    &:hover {
+        background-color: rgb(40, 40, 40);
+        color: map-get($var, color);
+    }
+}
+
+.swal2-success-ring {
+    border-color: map-get($var, color) !important;
+    color: map-get($var, color) !important;
+}
+
+.swal2-confirm {
+    background-color: map-get($var, color) !important;
+}
+.swal2-styled.swal2-confirm {
+    &:hover {
+        color: rgb(40, 40, 40);
+    }
+}

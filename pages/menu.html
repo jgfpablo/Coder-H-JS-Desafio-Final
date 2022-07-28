@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
         
 </head>
 
@@ -28,7 +30,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark fs-3">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="./index.html"><img src="../assets/img/logo-menu.png" width="50px"
+                <a class="navbar-brand logo" href="../index.html"><img src="../assets/img/logo-menu.png" width="50px"
                         alt="Logo" srcset=""> Coffee</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,7 +94,8 @@
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Macchiato Bombóm</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button  onclick="Restar('Macchiato Bombom')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Macchiato Bombom" value="0" class="input-number" type="number"><button onclick="Sumar('Macchiato Bombom')" class="btn-agregar-quitar">+</button></div>
+                            <p class="menu-text-title">$240</p>
                         </div>
     
                     </div>
@@ -110,7 +113,8 @@
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Capuccino Moka</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Cappuccino Moka')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Cappuccino Moka" value="0" class="input-number" type="number"><button onclick="Sumar('Cappuccino Moka')" class="btn-agregar-quitar">+</button></div>
+                            <p class="menu-text-title">$240</p>
                         </div>
     
                     </div>
@@ -124,12 +128,13 @@
     
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/productos/bebidas_calientes/Cappuccino.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                                alt="imagen Cappuccino" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Cappuccino</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button onclick="Restar('Cappuccino')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Cappuccino" value="0" class="input-number" type="number"><button onclick="Sumar('Cappuccino')" class="btn-agregar-quitar">+</button></div>
+                            <p class="menu-text-title">$220</p>
                         </div>
     
                     </div>
@@ -142,12 +147,14 @@
     
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/productos/bebidas_calientes/Capuccino-Tentación.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                                alt="imagen Cappuccino Tentación" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Cappuccino Tentación</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Cappuccino Tentación')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Cappuccino Tentación" value="0" class="input-number" type="number"><button onclick="Sumar('Cappuccino Tentación')" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$250</p>
                         </div>
     
                     </div>
@@ -159,13 +166,15 @@
                     <div >
     
                         <div class="d-flex justify-content-center">
-                            <img src="../assets/img/productos/bebidas_calientes/Macchiato-Bombóm.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                            <img src="../assets/img/productos/bebidas_calientes/Cappuccino-Bombóm.png" class="img-menu"
+                                alt="imagen Cappuccino Bombóm" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
-                            <p class="menu-text-title ">Macchiato Bombóm</p>
-                            <p class="menu-text-title">$$$</p>
+                            <p class="menu-text-title ">Cappuccino Bombóm</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Cappuccino Bombóm')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Cappuccino Bombóm" value="0" class="input-number" type="number"><button onclick="Sumar('Cappuccino Bombóm' )" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$230</p>
                         </div>
     
                     </div>
@@ -178,12 +187,14 @@
     
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/productos/bebidas_calientes/Macchiato.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                                alt="imagen Macchiato" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Macchiato</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Macchiato')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Macchiato" value="0" class="input-number" type="number"><button onclick="Sumar('Macchiato')" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$220</p>
                         </div>
     
                     </div>
@@ -210,12 +221,14 @@
     
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/productos/bebidas_frias/te-frambuesa.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                                alt="imagen Té de Frambuesa" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Té de Frambuesa</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Té de Frambuesa')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Té de Frambuesa" value="0" class="input-number" type="number"><button onclick="Sumar('Té de Frambuesa')" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$150</p>
                         </div>
     
                     </div>
@@ -228,12 +241,14 @@
     
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/productos/bebidas_frias/te-limon.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                                alt="imagen Té de Limon" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Té de Limon</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Té de Limon')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Té de Limon" value="0" class="input-number" type="number"><button onclick="Sumar('Té de Limon')" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$120</p>
                         </div>
     
                     </div>
@@ -247,12 +262,14 @@
     
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/productos/bebidas_frias/te-naranja.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                                alt="imagen Té de Naranja" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Té de Naranja</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Té de Naranja')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Té de Naranja" value="0" class="input-number" type="number"><button onclick="Sumar('Té de Naranja')" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$140</p>
                         </div>
     
                     </div>
@@ -283,7 +300,9 @@
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Tostado 4 Quesos</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Tostado 4 Quesos')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Tostado 4 Quesos" value="0" class="input-number" type="number"><button onclick="Sumar('Tostado 4 Quesos')" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$200</p>
                         </div>
     
                     </div>
@@ -296,12 +315,14 @@
     
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/productos/salados/Tostado-mixto.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                                alt="imagen Tostado Mixto" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Tostado Mixto</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Tostado Mixto')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Tostado Mixto" value="0" class="input-number" type="number"><button onclick="Sumar('Tostado Mixto')" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$250</p>
                         </div>
     
                     </div>
@@ -315,12 +336,14 @@
     
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/productos/salados/Tostado-napolitano.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                                alt="imagen Tostado Napolitano" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Tostado Napolitano</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Tostado Napolitano')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Tostado Napolitano" value="0" class="input-number" type="number"><button onclick="Sumar('Tostado Napolitano')" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$230</p>
                         </div>
     
                     </div>
@@ -345,12 +368,14 @@
     
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/productos/dulces/flan_casero.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                                alt="imagen Flan" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Flan</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Flan')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Flan" value="0" class="input-number" type="number"><button onclick="Sumar('Flan')" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$170</p>
                         </div>
     
                     </div>
@@ -364,12 +389,14 @@
     
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/productos/dulces/pay_de_queso.png" class="img-menu"
-                                alt="imagen cafe moka" srcset="">
+                                alt="imagen Pay de Queso" srcset="">
                         </div>
     
                         <div class="d-flex flex-column align-items-center">
                             <p class="menu-text-title ">Pay de Queso</p>
-                            <p class="menu-text-title">$$$</p>
+                            <div class="agregar-quitar-menu"><button    onclick="Restar('Pay de Queso')" class="btn-agregar-quitar btn-quitar">-</button><input disabled=»disabled» id="Pay de Queso" value="0" class="input-number" type="number"><button onclick="Sumar('Pay de Queso')" class="btn-agregar-quitar">+</button></div>
+
+                            <p class="menu-text-title">$250</p>
                         </div>
     
                     </div>
@@ -380,30 +407,39 @@
 
         </section>
 
-        <button type="button" class="btn carrito-btn fa-solid fa-basket-shopping " data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" onclick="Total()" class="btn carrito-btn fa-solid fa-basket-shopping " data-bs-toggle="modal" data-bs-target="#exampleModal">
         </button>
 
 
 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content fondo-modal  ">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title text-color-modal-2" id="exampleModalLabel">Carrito Compras</h5>
                     </div>
-                <div class="modal-body">
-                    Tabla de precios
+                <div class="modal-body text-color-modal-1">
+                    <table class="table table-dark text-color-modal-1">
+                        <thead>
+                            <tr>
+                                <th>nombre</th>
+                                <th>cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla">
+                        </tbody>
+                    </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                                        <span class="text-color-modal-1">Total de la compra $<span class="text-color-modal-1" id="total"></span></span>
+
+                    <button type="button" class="btn btn-cerrar" data-bs-dismiss="modal">Volver</button>
+                    <button type="button" onclick="RealizarPedido()" data-bs-dismiss="modal" class="btn btn-ok">Realizar Pedido</button>
                 </div>
                 </div>
             </div>
         </div>
-
 
 
     </main>
@@ -436,35 +472,12 @@
 
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="../assets/js/js.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="../assets/js/menu.js"></script>
 </body>
 
 </html>

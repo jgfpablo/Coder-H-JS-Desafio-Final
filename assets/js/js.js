@@ -369,3 +369,49 @@ if (agregar == "No" || agregar == "no" || agregar == "NO") {
 
     console.log("El total de su compra es : " + precioTotal);
 }
+
+// let tabla = document.getElementById("tabla");
+
+// for (const iterator of seleccionesDeUsuario) {
+//     const tr = document.createElement("tr");
+//     const td1 = document.createElement("td");
+//     const td2 = document.createElement("td");
+//     const td3 = document.createElement("td");
+
+//     contador = 1;
+
+//     id = document.createTextNode(contador);
+//     nombre = document.createTextNode(iterator.nombre);
+//     cantidad = document.createTextNode(iterator.cantidad);
+
+//     contador++;
+
+//     tabla.appendChild(tr).appendChild(td1).appendChild(id);
+
+//     tabla.appendChild(tr).appendChild(td2).appendChild(nombre);
+
+//     tabla.appendChild(tr).appendChild(td3).appendChild(cantidad);
+// }
+
+let tabla = document.getElementById("tabla");
+let totalCompra = document.getElementById("total");
+
+for (const iterator of seleccionesDeUsuario) {
+    const tr = document.createElement("tr");
+
+    contador = 1;
+
+    id = document.createTextNode(contador);
+    nombre = document.createTextNode(iterator.nombre);
+    cantidad = document.createTextNode(iterator.cantidad);
+
+    td = document.createElement("td");
+    tabla.appendChild(tr).appendChild(td).appendChild(id);
+    td = document.createElement("td");
+    tabla.appendChild(tr).appendChild(td).appendChild(nombre);
+    td = document.createElement("td");
+    tabla.appendChild(tr).appendChild(td).appendChild(cantidad);
+    contador++;
+}
+
+totalCompra.innerHTML = precioTotal;
