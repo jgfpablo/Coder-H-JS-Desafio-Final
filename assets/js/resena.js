@@ -111,6 +111,7 @@ AgregarNuevoComentario = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 carga(comentariosAbstraidos.length - 1);
+                localStorage.formulario = "";
                 window.location.reload();
             }
         });
@@ -179,3 +180,31 @@ if (localStorage.length == 0) {
 }
 
 CargarTodosLosComentarios();
+
+localStorageFormulario = () => {
+    formulario = [];
+
+    nombre = document.getElementById("nombre").value;
+    correo = document.getElementById("correo").value;
+    texto = document.getElementById("texto").value;
+
+    formulario.push(nombre);
+    formulario.push(correo);
+    formulario.push(texto);
+
+    localStorage.setItem("formulario", JSON.stringify(formulario));
+
+    console.log(localStorage.formulario);
+};
+
+cargarFormularioComentario = () => {
+    if (localStorage.formulario) {
+        formulario = JSON.parse(localStorage.getItem("formulario"));
+
+        document.getElementById("nombre").value = formulario[0];
+        document.getElementById("correo").value = formulario[1];
+        document.getElementById("texto").value = formulario[2];
+    }
+};
+
+cargarFormularioComentario();
