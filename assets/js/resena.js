@@ -85,7 +85,6 @@ carga = (index) => {
         .appendChild(span).textContent = text;
 
     setTimeout(() => {
-        //necesito asegurarme que este creado el span de texto para luego anadirle la funcion de la linea 109  (cambiar por promesa despues)
         agregarSpanText(index);
         verMenos(index);
     }, 10);
@@ -193,8 +192,6 @@ localStorageFormulario = () => {
     formulario.push(texto);
 
     localStorage.setItem("formulario", JSON.stringify(formulario));
-
-    console.log(localStorage.formulario);
 };
 
 cargarFormularioComentario = () => {
