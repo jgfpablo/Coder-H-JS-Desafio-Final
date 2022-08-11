@@ -3,7 +3,7 @@ class Comentarios {
         (this.nombre = nombre),
             (this.comentario = comentario),
             (this.correo = correo),
-            (this.img = img);
+            (this.image = img);
     }
 }
 
@@ -47,6 +47,7 @@ let comentariosAbstraidos = [
 ];
 
 carga = (index) => {
+    let { nombre, comentario, image } = comentariosAbstraidos[index];
     article = document.createElement("article");
     article.className = "col-12 col-md-4 col-lg-3 bg m-4 resenas";
     div = document.createElement("div");
@@ -60,7 +61,7 @@ carga = (index) => {
     span = document.createElement("span");
     span.className = "text-center span-text";
     span.setAttribute("id", `${index}`);
-    text = document.createTextNode(comentariosAbstraidos[index].comentario);
+    text = document.createTextNode(comentario);
     comentarios
         .appendChild(article)
         .appendChild(div)
@@ -70,7 +71,7 @@ carga = (index) => {
     div = document.createElement("div");
     div.className = "d-flex justify-content-center mt-4";
     img = document.createElement("img");
-    img.setAttribute("src", `${comentariosAbstraidos[index].img}`);
+    img.setAttribute("src", image);
     img.className = "border-100 imagen-resena";
     comentarios.appendChild(article).appendChild(div).appendChild(img);
 
@@ -78,16 +79,14 @@ carga = (index) => {
     div.className = "d-flex justify-content-center fs-2 text-center";
     span = document.createElement("span");
     span.className = "color fs-1";
-    text = comentariosAbstraidos[index].nombre;
+    text = nombre;
     comentarios
         .appendChild(article)
         .appendChild(div)
         .appendChild(span).textContent = text;
 
-    setTimeout(() => {
-        agregarSpanText(index);
-        verMenos(index);
-    }, 10);
+    agregarSpanText(index);
+    verMenos(index);
 };
 
 AgregarNuevoComentario = () => {
@@ -163,35 +162,31 @@ verMenos = (id) => {
 if (localStorage.comentarios) {
     comentariosAbstraidos = [];
     coment = JSON.parse(localStorage.getItem("comentarios"));
-
     for (let index = 0; index < coment.length; index++) {
         comentariosAbstraidos[index] = new Comentarios(
             coment[index].nombre,
             coment[index].comentario,
             coment[index].correo,
-            coment[index].img
+            coment[index].image
         );
     }
 }
 
-if (localStorage.length == 0) {
+localStorage.length == 0 &&
     localStorage.setItem("comentarios", JSON.stringify(comentariosAbstraidos));
-}
-
-CargarTodosLosComentarios();
 
 localStorageFormulario = () => {
-    formulario = [];
+    setTimeout(() => {
+        formulario = [];
 
-    nombre = document.getElementById("nombre").value;
-    correo = document.getElementById("correo").value;
-    texto = document.getElementById("texto").value;
+        nombre = document.getElementById("nombre").value;
+        correo = document.getElementById("correo").value;
+        texto = document.getElementById("texto").value;
 
-    formulario.push(nombre);
-    formulario.push(correo);
-    formulario.push(texto);
+        formulario = [...formulario, nombre, correo, texto];
 
-    localStorage.setItem("formulario", JSON.stringify(formulario));
+        localStorage.setItem("formulario", JSON.stringify(formulario));
+    }, 10);
 };
 
 cargarFormularioComentario = () => {
@@ -203,5 +198,7 @@ cargarFormularioComentario = () => {
         document.getElementById("texto").value = formulario[2];
     }
 };
+
+CargarTodosLosComentarios();
 
 cargarFormularioComentario();

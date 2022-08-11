@@ -244,6 +244,12 @@ main .hero {
 .swal2-styled.swal2-confirm:hover {
   color: #282828; }
 
+.w-100 {
+  width: 100%; }
+
+.h-100 {
+  width: 100%; }
+
 .resenas {
   border: 1px solid white;
   margin: 20px; }
