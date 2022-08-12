@@ -189,7 +189,7 @@ localStorageFormulario = () => {
     }, 10);
 };
 
-cargarFormularioComentario = () => {
+CargarFormularioComentario = () => {
     if (localStorage.formulario) {
         formulario = JSON.parse(localStorage.getItem("formulario"));
 
@@ -201,4 +201,4 @@ cargarFormularioComentario = () => {
 
 CargarTodosLosComentarios();
 
-cargarFormularioComentario();
+CargarFormularioComentario();
